@@ -2,12 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import { MainRouter } from '../src/routes/MainRouter.routes';
+// import App from './auth/App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <MainRouter />
+    {/* <App /> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
