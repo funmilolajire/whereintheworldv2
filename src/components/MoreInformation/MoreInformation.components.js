@@ -1,10 +1,14 @@
+import { useEffect } from 'react';
 import './MoreInformation.components.scss';
 import { MoreInfoContent } from '../MoreInfoContent/MoreInfoContent.components';
 import { Link } from 'react-router-dom';
 
-export const MoreInformation = () => {
+export const MoreInformation = props => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    })
     return (
-        <div className="min-h-screen sm:px-4 MoreInformation">
+        <div className="h-full min-h-screen pb-72 sm:px-4 MoreInformation">
             <div className="w-56 sm:w-40 BackButtonWrapper">
                 <Link to='/'>
                     <button className="flex items-center justify-center w-full h-16 my-32 text-2xl font-light bg-white rounded-lg shadow sm:mt-16 sm:mb-28 dark:bg-gray-800 BackButton focus:outline-none focus:ring focus:border-gray-300">
@@ -15,7 +19,7 @@ export const MoreInformation = () => {
                 </button>
                 </Link>
             </div>
-            <MoreInfoContent />
+            <MoreInfoContent getBorderNames={props.getBorderNames} countryInformation={props.countryInformation} />
         </div>
     )
 }

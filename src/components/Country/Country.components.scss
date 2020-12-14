@@ -1,6 +1,10 @@
 .Country {
     width: 26.4rem;
-    height: 33.6rem;
+    height: 34.6rem;
+
+    @media screen and (max-width: 440px) {
+        height: 33.6rem
+    }
 
     figure {
         height: 16rem;
