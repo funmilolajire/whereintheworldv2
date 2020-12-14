@@ -19,9 +19,9 @@ Whereintheworld is a progressive web app that pulls data from rest countries api
 
 ## Screenshots  
 
-![homepage](./screenshots/homepage.jpg)
-![moreinformation](./screenshots/moreinformation.jpg)
-![darkmode](./screenshots/darkmode.jpg)
+![homepage](./public/screenshots/homepage.jpg)
+![moreinformation](./public/screenshots/moreinformation.jpg)
+![darkmode](./public/screenshots/darkmode.jpg)
 
 ## Technologies  
 
