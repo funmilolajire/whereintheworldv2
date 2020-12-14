@@ -62,7 +62,7 @@ export const Search = props => {
                     <span id="asia" className="block px-5 py-2 text-2xl text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-gray-50" role="menuitem">Asia</span>
                     <span id="europe" className="block px-5 py-2 text-2xl text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-gray-50" role="menuitem">Europe</span>
                     <span id="oceania" className="block px-5 py-2 text-2xl text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-gray-50" role="menuitem">Oceania</span>
-                    <span id="oceania" className="block px-5 py-3 text-2xl text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-gray-50" role="menuitem">All Regions</span>
+                    <span id="allRegions" className="block px-5 py-3 text-2xl text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-gray-50" role="menuitem">All Regions</span>
                 </div>
             </div>
 
