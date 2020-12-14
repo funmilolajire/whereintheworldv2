@@ -13,16 +13,12 @@ export const MainRouter = props => {
         setCountries(allCountries);
     }
     const getCountriesBySearch = async (name) => {
-        // if (countries.length !== 0) {
-        //     const searchResults = countries.filter(country => country.name.includes(name))
-        //     console.log(searchResults)
-        //     setCountries(prev => searchResults)
-        // } else {
+        setCountries([])
         const allCountries = await CountriesApi.getCountriesBySearch(name);
         setCountries(allCountries);
-        // }
     }
     const getCountriesByRegion = async (region) => {
+        setCountries([])
         const allCountries = await CountriesApi.getCountriesByRegion(region);
         setCountries(allCountries);
     }
