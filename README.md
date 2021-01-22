@@ -36,16 +36,16 @@ Whereintheworld is a progressive web app that pulls data from rest countries api
 
 ## Setup  
 
-Visit [https://whereindeworld.netlify.app] in your browser.
+Visit [Where In The World](https://whereindeworld.netlify.app) in your browser.
 
 ## Features  
 
-- Users should be able to see all countries from the api on the homepage
-- Users should be able to search for countries using an input field
-- Users should be able filter countries by region
-- Users should be able to click on a country to see more detailed information on a separate page
-- Users should be able to click through to the border countries on the detail page
-- Users should be able to toggle the color scheme between light and dark mode
+- Users can see all countries from the api on the homepage
+- Users can search for countries using an input field
+- Users can filter countries by region
+- Users can click on a country to see more detailed information on a separate page
+- Users can click through to the border countries on the detail page
+- Users can toggle the color scheme between light and dark mode
 
 ## Status  
 
