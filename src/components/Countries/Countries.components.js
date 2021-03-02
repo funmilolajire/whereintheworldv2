@@ -14,7 +14,7 @@ const Spinner = () => (
 export const Countries = props => {
     return (
         <>
-            {props.countries.length !== 0 && <div className="flex flex-wrap justify-between w-full pb-20 sm:justify-center gap-x-8 gap-y-28 Countries">
+            {props.countries.length !== 0 && <div className="grid flex-wrap justify-between w-full grid-flow-row pb-20 xl:justify-items-center mmmd:grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 xl:grid-cols-3 sm:justify-center gap-y-28 Countries">
                 {props.countries.length && props.countries.map(country =>
                     <LazyLoad key={country.name} height={200} offset={100} placeholder={<Spinner />}>
                         <Country key={country.name} country={country} />

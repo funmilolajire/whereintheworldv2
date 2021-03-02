@@ -8,6 +8,8 @@ module.exports = {
       'xl': { 'max': '1366px' },
       'lg': { 'max': '1040px' },
       'md': { 'max': '780px' },
+      'mmd': { 'max': '660px' },
+      'mmmd': { 'max': '620px' },
       'sm': { 'max': '440px' },
       'print': { 'raw': 'print' }
     }

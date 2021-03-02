@@ -10,7 +10,7 @@ export const Country = props => {
                 <figure className="w-full overflow-hidden rounded-t-lg">
                     <img src={country.flag} alt="" className="object-cover w-full h-full" />
                 </figure>
-                <section className="p-10 Country-details">
+                <section className="p-10 lg:p-7 Country-details">
                     <h2 className="text-3xl font-extrabold sm:text-2xl pb-7">{country.name}</h2>
                     <div className="space-y-3 text-2xl Country-details-main">
                         <div className="population">
