@@ -8,7 +8,7 @@ const getPopulation = (population) => {
 
 export const CountriesApi = {
     async getAllCountries() {
-        const url = 'https://restcountries.com/v3.1/all';
+        const url = 'https://restcountries.com/v2/all';
         const countries = await axios.get(url).then(response => response.data.map(data => ({
             name: data.name,
             population: getPopulation(data.population),
@@ -19,7 +19,7 @@ export const CountriesApi = {
         return countries;
     },
     async getMoreInformation(countryName) {
-        const url = `https://restcountries.com/v3.1/name/${countryName}?fullText=true`;
+        const url = `https://restcountries.com/v2/name/${countryName}?fullText=true`;
         const country = await axios.get(url).then(response => response.data.map(data => ({
             name: data.name,
             population: getPopulation(data.population),
@@ -36,7 +36,7 @@ export const CountriesApi = {
         return country;
     },
     async getCountriesBySearch(name) {
-        const url = `https://restcountries.com/v3.1/name/${name}`;
+        const url = `https://restcountries.com/v2/name/${name}`;
         if (name !== '') {
             const countries = await axios.get(url).then(response => response.data.map(data => ({
                 name: data.name,
@@ -49,7 +49,7 @@ export const CountriesApi = {
         }
     },
     async getCountriesByRegion(region) {
-        const url = `https://restcountries.com/v3.1/region/${region}`;
+        const url = `https://restcountries.com/v2/region/${region}`;
         const countries = await axios.get(url).then(response => response.data.map(data => ({
             name: data.name,
             population: getPopulation(data.population),
@@ -60,7 +60,7 @@ export const CountriesApi = {
         return countries;
     },
     async getBorderCountries(code) {
-        const url = `https://restcountries.com/v3.1/alpha/${code}`;
+        const url = `https://restcountries.com/v2/alpha/${code}`;
         const countryName = await axios.get(url).then(response => response.data.name);
         return countryName
     }
